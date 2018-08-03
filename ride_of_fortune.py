@@ -65,7 +65,7 @@ class Switch(object):
     
     def operation(self, explorer: Explorer) -> None:
         """This method changes the explorer's direction based on
-        the artifact's current state"""
+        the artifact's current state, and then changes the Switch's state"""
 
         direction_dict = {"A": {"W": "N", "E": "S", "S": "E", "N": "W"},
                           "B": {"W": "S", "E": "N", "S": "W", "N": "E"}}
